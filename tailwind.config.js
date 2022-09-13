@@ -15,7 +15,7 @@ module.exports = {
         poppins: ["Montserrat", "sans-serif"],
       },
       gridTemplateColumns: {
-        '15': 'repeat(auto-fit, minmax(230px, 1fr))',
+        '15': 'repeat(auto-fit, minmax(400px, 1fr))',
         '16': 'repeat(auto-fit, minmax(320px, 1fr))'
       },
     }

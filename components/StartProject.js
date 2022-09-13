@@ -11,7 +11,7 @@ export default function StartProject() {
         buy the coffee.
       </p>
       <div className="text-lg flex-[1] flex items-center justify-center">
-        <div className="border-2 font-medium p-2 gap-2 flex flex-row items-center justify-center w-1/2 border-sitegreen rounded-2xl hover:bg-sitegreen hover:text-textBlack">
+        <div className="border-2 cursor-pointer font-medium p-2 gap-2 flex flex-row items-center justify-center w-1/2 border-sitegreen rounded-2xl hover:bg-sitegreen hover:text-textBlack">
           <AiOutlineFire /> Let's do this
         </div>
       </div>
