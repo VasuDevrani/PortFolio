@@ -1,4 +1,4 @@
-export default function projectItem() {
+export default function ProjectItem() {
   return (
     <div>projectItem</div>
   )
