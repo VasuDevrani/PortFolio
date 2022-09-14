@@ -7,15 +7,15 @@
         @apply container mx-auto max-w-[1350px] 
     }
     .footer-icons{
-        @apply p-2 cursor-pointer hover:text-siteBg hover:bg-white hover:border-white border-2 text-xl border-gray-300 rounded-full
+        @apply p-2 cursor-pointer hover:text-siteBg hover:bg-white hover:border-white border-2 text-base sm:text-xl border-gray-300 rounded-full
     }
     .projectItem{
-        @apply flex flex-row w-[90vw] md:w-[60vw] border-4 justify-between items-center
+        @apply flex flex-col sm:flex-row w-[90vw] md:w-[60vw] border-4 justify-between items-center py-3
     }
     .techList{
-        @apply font-semibold outline outline-sitegreen text-textBlack hover:bg-sitegreen cursor-default p-1 rounded-lg
+        @apply font-semibold flex flex-row items-center gap-2 outline outline-sitegreen text-textBlack hover:bg-sitegreen cursor-default p-1 rounded-md md:rounded-lg text-[13px] sm:text-base lg:text-lg
     }
     .unList{
-        @apply flex flex-row list-none justify-around items-start outline outline-textBlack p-2 my-2 flex-wrap gap-2 rounded-lg
+        @apply flex flex-row list-none justify-around items-start outline outline-textBlack p-2 my-2 flex-wrap gap-2 rounded-md md:rounded-lg
     }
 }

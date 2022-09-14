@@ -13,9 +13,9 @@ export default function Bio() {
           height={100}
         />
       </div>
-      <div className="flex flex-col gap-2 justify-center items-center h-[32rem] bg-siteBg text-white text-center">
-        <h1 className="text-3xl font-bold">Hi, I'm Vasu devrani. Nice to meet you.</h1>
-        <p className="w-[50%] font-medium text-lg my-3">
+      <div className="flex flex-col gap-2 justify-center items-center h-[28rem] md:h-[30rem] lg:h-[32rem] bg-siteBg text-white text-center px-2">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">Hi, I'm Vasu devrani. Nice to meet you.</h1>
+        <p className="w-[85%] sm:w-[65%] md:w-[60%] font-medium text-[14px] sm:text-base md:text-lg my-3">
           Since beginning my journey as a freelance designer over 11 years ago,
           I've done remote work for agencies, consulted for startups, and
           collaborated with talented people to create digital products for both
