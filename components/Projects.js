@@ -24,6 +24,7 @@ export default function Projects() {
             <div className="w-full sm:w-auto sm:flex-[0.6]">
               <Image
                 src={projectList[0].src}
+                alt="filmoro-project"
                 layout="responsive"
                 width={35}
                 height={20}
@@ -99,6 +100,7 @@ export default function Projects() {
                 layout="responsive"
                 width={35}
                 height={20}
+                alt="soluText-project"
                 objectFit="contain"
               />
             </div>
@@ -113,6 +115,7 @@ export default function Projects() {
                 layout="responsive"
                 width={35}
                 height={20}
+                alt="buysell-project"
                 objectFit="contain"
               />
             </div>

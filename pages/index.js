@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { findDOMNode } from "react-dom";
 import Bio from "../components/Bio";
 import Collab from "../components/Collab";
 import Footer from "../components/Footer";
@@ -13,7 +12,7 @@ export default function Home() {
   const bio = useRef();
 
   const handleScroll = (val) => {
-    let node = findDOMNode(val === "project" ? project.current : bio.current);
+    let node = val === "project" ? project.current : bio.current;
     node.scrollIntoView({
       behavior: "smooth",
       block: "center",
