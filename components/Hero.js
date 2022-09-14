@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center">
         <p className="text-2xl sm:text-3xl md:text-5xl font-bold">Developer | Student</p>
         <p className="text-base sm:text-xl md:text-2xl mt-2 sm:mt-5 font-medium">
-          I design and code beautifully simple things, and I love what I do.
+          I love to code, explore around and helping out others
         </p>
       </div>
       <div className="mt-10 container w-[150px] sm:w-[200px] md:w-[250px]">

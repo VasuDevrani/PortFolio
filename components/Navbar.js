@@ -21,7 +21,7 @@ export default function Navbar({ handleScroll }) {
           />
         </div>
         <div
-          className="block sm:hidden text-3xl"
+          className="block sm:hidden text-3xl cursor-pointer"
           onClick={() => setMenu(!menu)}
         >
           <HiMenuAlt1 />
@@ -42,7 +42,7 @@ export default function Navbar({ handleScroll }) {
             menu ? "translate-y-0 opacity-100" : "translate-y-[100%] opacity-0"
           } bg-white absolute top-0 left-0 w-[100%] duration-300 gap-4 p-3 py-10 items-center justify-center shadow-2xl text-sm`}
         >
-          <div className="text-xl" onClick={() => setMenu(!menu)}>
+          <div className="text-xl cursor-pointer" onClick={() => setMenu(!menu)}>
             <BsArrowBarLeft />
           </div>
           <p

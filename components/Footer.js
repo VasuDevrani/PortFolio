@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="w-28 sm:w-36 md:w-40 h-26 sm:h-32 md:h-36 relative">
         <Image
           src={logo.src}
-          alt="tech"
+          alt="logo"
           layout="responsive"
           width={40}
           height={40}
@@ -33,6 +33,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           href="https://www.instagram.com/vasudevrani2002/"
+          aria-label="Instagram"
         >
           <div className="footer-icons">
             <BsInstagram />
@@ -42,6 +43,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/vasu-devrani/"
+          aria-label="Linkedin"
         >
           <div className="footer-icons">
             <BsLinkedin />
@@ -50,7 +52,7 @@ export default function Footer() {
         <div className="footer-icons" onClick={sendMail}>
           <BsMailbox />
         </div>
-        <a target="_blank" rel="noreferrer" href="https://twitter.com/si_vasu">
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/si_vasu" aria-label="Twitter">
           <div className="footer-icons">
             <BsTwitter />
           </div>
@@ -59,6 +61,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           href="https://github.com/VasuDevrani"
+          aria-label="Github"
         >
           <div className="footer-icons">
             <BsGithub />

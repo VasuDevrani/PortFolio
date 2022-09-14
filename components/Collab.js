@@ -7,7 +7,7 @@ export default function Collab() {
       <p className="text-xl md:text-2xl font-semibold my-1 sm:my-2">
         Interested in collaborating with me?
       </p>
-      <p className="text-[13px] md:text-base sm:text-lg font-base my-1 sm:my-2">
+      <p className="text-[13px] sm:text-base md:text-lg font-base my-1 sm:my-2">
         I'm always open to discussing product design work or partnership
         opportunities.
       </p>
