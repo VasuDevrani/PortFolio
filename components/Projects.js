@@ -1,14 +1,21 @@
 import Image from "next/image";
 import projectList from "../public/tech/projectList";
 import { BsGlobe, BsGithub } from "react-icons/bs";
+import sendMail from "../utils/SendEmail";
 
 export default function Projects() {
   return (
-    <div className="box flex flex-col justify-center items-center my-[7rem] md:my-[10rem]">
+    <div
+      className="box flex flex-col justify-center items-center my-[7rem] md:my-[10rem]"
+      id="projects"
+    >
       <p className="text-2xl md:text-3xl font-semibold my-2">My Recent Work</p>
       <p className="text-base sm:text-lg md:text-xl font-medium px-3">
         Here are a few past design projects I've worked on. Want to see more?
-        <span className="text-blue-700 cursor-pointer"> Email me</span>
+        <span className="text-blue-700 cursor-pointer" onClick={sendMail}>
+          {" "}
+          Email me
+        </span>
       </p>
       <div className="box flex flex-col w-[90vw] gap-1 sm:gap-3 mt-10">
         {/* one */}
@@ -24,19 +31,33 @@ export default function Projects() {
               />
             </div>
             <div className="sm:flex-[0.4] text-left">
-              <h1 className="text-xl md:text-2xl font-semibold uppercase">filmoro</h1>
+              <h1 className="text-xl md:text-2xl font-semibold uppercase">
+                filmoro
+              </h1>
               <ul className="unList">
                 <li className="techList">TypeScript</li>
                 <li className="techList">ReactJS</li>
                 <li className="techList">Tailwind CSS</li>
               </ul>
               <ul className="unList">
-                <li className="techList">
-                  <BsGlobe /> Live
-                </li>
-                <li className="techList">
-                  <BsGithub /> GitHub
-                </li>
+                <a
+                  href="https://filmoro-20491.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGlobe /> Live
+                  </li>
+                </a>
+                <a
+                  href="https://github.com/VasuDevrani/FilmMoro"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGithub /> GitHub
+                  </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -52,13 +73,24 @@ export default function Projects() {
                 <li className="techList">Tailwind CSS</li>
               </ul>
               <ul className="unList">
-                <li className="techList">
-                  <BsGlobe />
-                  Live
-                </li>
-                <li className="techList">
-                  <BsGithub /> GitHub
-                </li>
+                <a
+                  href="https://papaya-biscochitos-c6c5db.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGlobe /> Live
+                  </li>
+                </a>
+                <a
+                  href="https://github.com/VasuDevrani/SoluText-2.0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGithub /> GitHub
+                  </li>
+                </a>
               </ul>
             </div>
             <div className="w-full sm:w-auto sm:flex-[0.6]">
@@ -91,12 +123,24 @@ export default function Projects() {
                 <li className="techList">Context API</li>
               </ul>
               <ul className="unList">
-                <li className="techList">
-                  <BsGlobe /> Live
-                </li>
-                <li className="techList">
-                  <BsGithub /> GitHub
-                </li>
+                <a
+                  href="https://mern-buysell.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGlobe /> Live
+                  </li>
+                </a>
+                <a
+                  href="https://github.com/VasuDevrani/E-Commerce-MERN"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGithub /> GitHub
+                  </li>
+                </a>
               </ul>
             </div>
           </div>

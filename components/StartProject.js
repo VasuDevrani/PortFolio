@@ -1,4 +1,5 @@
 import { AiOutlineFire } from "react-icons/ai";
+import sendMail from "../utils/SendEmail";
 
 export default function StartProject() {
   return (
@@ -11,7 +12,7 @@ export default function StartProject() {
         buy the coffee.
       </p>
       <div className="text-lg flex-[1] flex items-center justify-center">
-        <div className="border-2 cursor-pointer font-medium p-1 sm:p-2 gap-2 flex flex-row items-center justify-center lg:w-3/4 border-sitegreen rounded-lg sm:rounded-xl lg:rounded-2xl hover:bg-sitegreen hover:text-textBlack text-[15px] sm:text-base">
+        <div className="border-2 cursor-pointer font-medium p-1 sm:p-2 gap-2 flex flex-row items-center justify-center lg:w-3/4 border-sitegreen rounded-lg sm:rounded-xl lg:rounded-2xl hover:bg-sitegreen hover:text-textBlack text-[15px] sm:text-base" onClick={sendMail}>
           <AiOutlineFire /> Let's do this
         </div>
       </div>

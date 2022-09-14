@@ -15,7 +15,7 @@ export default function Skills() {
         {techs.map((tech, index) => (
           <div
             key={index}
-            className="border-2 p-2 md:p-3 shadow-md w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 relative"
+            className="border-2 p-2 md:p-3 shadow-md w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 relative hover:bg-sitegreen"
           >
             <Image
               src={tech.src}

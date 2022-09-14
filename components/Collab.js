@@ -1,4 +1,5 @@
 import { BsFillChatSquareTextFill } from "react-icons/bs";
+import sendMail from "../utils/SendEmail";
 
 export default function Collab() {
   return (
@@ -10,7 +11,7 @@ export default function Collab() {
         I'm always open to discussing product design work or partnership
         opportunities.
       </p>
-      <div className="border-siteBg rounded-xl md:rounded-3xl cursor-pointer p-2 px-4 sm:px-6 border-2 text-siteBg hover:bg-siteBg hover:text-white flex flex-row items-center justify-center gap-3 my-6 sm:my-10 mb-[8rem] sm:mb-[10rem] md:mb-[13rem] text-[15px] sm:text-base">
+      <div className="border-siteBg rounded-xl font-semibold md:rounded-3xl cursor-pointer p-2 px-4 sm:px-6 border-2 text-siteBg hover:bg-siteBg hover:text-white flex flex-row items-center justify-center gap-3 my-6 sm:my-10 mb-[8rem] sm:mb-[10rem] md:mb-[13rem] text-[15px] sm:text-base" onClick={sendMail}>
         <BsFillChatSquareTextFill /> Start a Conversation
       </div>
     </div>
