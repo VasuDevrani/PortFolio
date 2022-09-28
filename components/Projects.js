@@ -2,6 +2,7 @@ import Image from "next/image";
 import projectList from "../public/tech/projectList";
 import { BsGlobe, BsGithub } from "react-icons/bs";
 import sendMail from "../utils/SendEmail";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
@@ -19,7 +20,13 @@ export default function Projects() {
       </p>
       <div className="box flex flex-col w-[90vw] gap-1 sm:gap-3 mt-10">
         {/* one */}
-        <div className="flex flex-row">
+        <motion.div
+          className="flex flex-row"
+          initial={{ opacity: 0, translateX: "-100%" }}
+          whileInView={{ opacity: 1, translateX: "0%" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
           <div className="projectItem shadow-lg gap-5 p-3">
             <div className="w-full sm:w-auto sm:flex-[0.6]">
               <Image
@@ -62,10 +69,16 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-row">
           {/* two */}
-          <div className="projectItem md:ml-auto shadow-lg gap-1 sm:gap-3 px-3">
+          <motion.div
+            className="projectItem md:ml-auto shadow-lg gap-1 sm:gap-3 px-3"
+            initial={{ opacity: 0, translateX: "-100%" }}
+            whileInView={{ opacity: 1, translateX: "0%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
             <div className="flex-[0.4] text-left">
               <h1 className="text-2xl font-semibold uppercase">solutext</h1>
               <ul className="unList">
@@ -104,11 +117,17 @@ export default function Projects() {
                 objectFit="contain"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* three */}
         <div className="flex flex-row">
-          <div className="projectItem shadow-lg gap-1 sm:gap-3 px-3">
+          <motion.div
+            className="projectItem shadow-lg gap-1 sm:gap-3 px-3"
+            initial={{ opacity: 0, translateX: "-100%" }}
+            whileInView={{ opacity: 1, translateX: "0%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
             <div className="w-full sm:w-auto sm:flex-[0.6]">
               <Image
                 src={projectList[2].src}
@@ -146,7 +165,7 @@ export default function Projects() {
                 </a>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
