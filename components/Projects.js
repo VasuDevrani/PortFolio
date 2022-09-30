@@ -12,7 +12,7 @@ export default function Projects() {
     >
       <p className="text-2xl md:text-3xl font-semibold my-2">My Recent Work</p>
       <p className="text-base sm:text-lg md:text-xl font-medium px-3">
-        Here are a few past design projects I've worked on. Want to see more?
+        Here are a few past projects I've worked on. Want to see more?
         <span className="text-blue-700 cursor-pointer" onClick={sendMail}>
           {" "}
           Email me
