@@ -4,6 +4,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { BsArrowBarLeft } from "react-icons/bs";
 import { useState } from "react";
 import sendMail from "../utils/SendEmail";
+// import resume from '/assets/Vasu.pdf'
 
 export default function Navbar({ handleScroll }) {
   const [menu, setMenu] = useState(false);
@@ -33,9 +34,10 @@ export default function Navbar({ handleScroll }) {
           <p className="cursor-pointer" onClick={() => handleScroll("project")}>
             Projects
           </p>
-          <p className="border-siteBg rounded-2xl md:rounded-3xl cursor-pointer p-1 px-3 md:px-4 border-2 text-siteBg hover:bg-siteBg hover:text-white">
+          <a className="border-siteBg rounded-2xl md:rounded-3xl cursor-pointer p-1 px-3 md:px-4 border-2 text-siteBg hover:bg-siteBg hover:text-white" href='/assets/Vasu.pdf'
+            download='VasuDevrani.pdf'>
             Say Hello
-          </p>
+          </a>
         </div>
         <div
           className={`sm:hidden flex flex-col ${
@@ -63,12 +65,13 @@ export default function Navbar({ handleScroll }) {
           >
             Projects
           </div>
-          <p
+          <a
             className="border-siteBg rounded-2xl md:rounded-3xl cursor-pointer p-1 px-3 md:px-4 border-2 text-siteBg hover:bg-siteBg hover:text-white w-1/3"
-            onClick={sendMail}
+            href='/assets/Vasu.pdf'
+            download='VasuDevrani.pdf'
           >
             Say Hello
-          </p>
+          </a>
         </div>
       </div>
     </div>
