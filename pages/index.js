@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Bio from "../components/Bio";
 import Collab from "../components/Collab";
 import Footer from "../components/Footer";
+import Hackathons from "../components/Hackathons";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
@@ -31,6 +32,7 @@ export default function Home() {
       <div ref={project}>
         <Projects />
       </div>
+      <Hackathons/>
       <Collab />
       <Footer />
     </div>

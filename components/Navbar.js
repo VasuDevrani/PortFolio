@@ -1,9 +1,8 @@
 import Image from "next/image";
 import logo from "../public/logo.png";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { BsArrowBarLeft } from "react-icons/bs";
+import { FaArrowLeft } from "react-icons/fa";
 import { useState } from "react";
-import sendMail from "../utils/SendEmail";
 // import resume from '/assets/Vasu.pdf'
 
 export default function Navbar({ handleScroll }) {
@@ -36,16 +35,16 @@ export default function Navbar({ handleScroll }) {
           </p>
           <a className="border-siteBg rounded-2xl md:rounded-3xl cursor-pointer p-1 px-3 md:px-4 border-2 text-siteBg hover:bg-siteBg hover:text-white" href='/assets/Vasu.pdf'
             download='VasuDevrani.pdf'>
-            Say Hello
+            RESUME
           </a>
         </div>
         <div
           className={`sm:hidden flex flex-col ${
-            menu ? "translate-y-0 opacity-100" : "translate-y-[100%] opacity-0"
+            menu ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"
           } bg-white absolute top-0 left-0 w-[100%] duration-300 gap-4 p-3 py-10 items-center justify-center shadow-2xl text-sm`}
         >
           <div className="text-xl cursor-pointer" onClick={() => setMenu(!menu)}>
-            <BsArrowBarLeft />
+            <FaArrowLeft />
           </div>
           <p
             className="cursor-pointer"
@@ -70,7 +69,7 @@ export default function Navbar({ handleScroll }) {
             href='/assets/Vasu.pdf'
             download='VasuDevrani.pdf'
           >
-            Say Hello
+            RESUME
           </a>
         </div>
       </div>

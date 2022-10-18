@@ -74,7 +74,7 @@ export default function Projects() {
           {/* two */}
           <motion.div
             className="projectItem md:ml-auto shadow-lg gap-1 sm:gap-3 px-3"
-            initial={{ opacity: 0, translateX: "-100%" }}
+            initial={{ opacity: 0, translateX: "100%" }}
             whileInView={{ opacity: 1, translateX: "0%" }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
@@ -164,6 +164,56 @@ export default function Projects() {
                   </li>
                 </a>
               </ul>
+            </div>
+          </motion.div>
+        </div>
+        {/* fourth */}
+        <div className="flex flex-row">
+          {/* two */}
+          <motion.div
+            className="projectItem md:ml-auto shadow-lg gap-1 sm:gap-3 px-3"
+            initial={{ opacity: 0, translateX: "100%" }}
+            whileInView={{ opacity: 1, translateX: "0%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="flex-[0.4] text-left">
+              <h1 className="text-2xl font-semibold uppercase">adminDB</h1>
+              <ul className="unList">
+                <li className="techList">ReactJS</li>
+                <li className="techList">SyncFusion</li>
+                <li className="techList">Tailwind CSS</li>
+              </ul>
+              <ul className="unList">
+                <a
+                  href="https://admindb.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGlobe /> Live
+                  </li>
+                </a>
+                <a
+                  href="https://github.com/VasuDevrani/SyncFusion-ADMIN_DASHBOARD"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li className="techList">
+                    <BsGithub /> GitHub
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div className="w-full sm:w-auto sm:flex-[0.6]">
+              <Image
+                src={projectList[3].src}
+                layout="responsive"
+                width={35}
+                height={20}
+                alt="soluText-project"
+                objectFit="contain"
+              />
             </div>
           </motion.div>
         </div>
