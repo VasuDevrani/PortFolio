@@ -1,7 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: false,
-  swcMinify: true,
-}
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   images: {
+//     domains: ["media.giphy.com"],
+//   },
+//   reactStrictMode: false,
+//   swcMinify: true,
+// };
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ["media0.giphy.com"],
+  },
+};

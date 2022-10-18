@@ -1,9 +1,12 @@
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import sendMail from "../utils/SendEmail";
+import dog from '../public/assets/dogGif.gif'
+import Image from "next/image";
 
 export default function Collab() {
   return (
     <div className="flex flex-col justify-center items-center box px-3">
+      <img src={dog.src} alt="" />
       <p className="text-xl md:text-2xl font-semibold my-1 sm:my-2">
         Interested in collaborating with me?
       </p>
