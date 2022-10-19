@@ -19,3 +19,7 @@
         @apply flex flex-row list-none justify-around items-start outline outline-textBlack p-2 my-2 flex-wrap gap-2 rounded-md md:rounded-lg
     }
 }
+
+body{
+    overflow-x: hidden;
+}

@@ -9,6 +9,6 @@
 
 module.exports = {
   images: {
-    domains: ["media0.giphy.com"],
+    domains: ["media0.giphy.com", "hackvsit-4.devfolio.co"],
   },
 };

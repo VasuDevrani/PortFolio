@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Bio from "../components/Bio";
 import Collab from "../components/Collab";
 import Footer from "../components/Footer";
