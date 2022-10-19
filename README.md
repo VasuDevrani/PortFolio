@@ -7,7 +7,7 @@
 - SEO best practices
 
 ## LIGHTHOUSE SCORES
-<img width="364" alt="2022-09-14 (3)" src="https://user-images.githubusercontent.com/101383635/190169067-5429676c-ae01-45e9-931c-6fd3390b536a.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/101383635/196466059-bd431583-ef8c-4aca-8a56-3be8395aa777.png">
 
 ## DESKTOP VIEW
 <img width="935" alt="2022-09-14 (8)" src="https://user-images.githubusercontent.com/101383635/190169311-8d885e2a-c8e8-48ab-9ae4-abef084eca5a.png">
