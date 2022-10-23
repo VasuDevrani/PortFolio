@@ -15,5 +15,5 @@
 ## MOBILE VIEW
 <img width="166" alt="2022-09-14 (9)" src="https://user-images.githubusercontent.com/101383635/190169742-e764d691-f0d2-4163-8a97-bf770bd1b617.png">
 
-### 🤓 Feel Free to make suggestions or get some inspiration
+### 🤓 Feel Free to make suggestions or get some inspiration 🤓
 ### Give it a ⭐ if you find it awesome
