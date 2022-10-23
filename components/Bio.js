@@ -19,9 +19,9 @@ export default function Bio() {
           Hi, I'm Vasu Devrani. Nice to meet you.
         </h1>
         <p className="w-[85%] sm:w-[65%] md:w-[60%] font-medium text-[14px] sm:text-base md:text-lg my-3">
-          Full Stack Developer, Open Source Enthusiast, proficient in DSA, Doing DevOps.<br/>
+          Full Stack Developer, DSA Problem Solver, Learning DevOps.<br/>
           Sophomore at MAIT, Delhi persueing B.Tech. in Information Technology. <br/>
-          I believe in being Kind & enthused all the time. I've participated in a couple of Hackathons, currently DSA head of our college society.
+          I like to enthusiastically work in OpenSource, participate in Hackathons and interact with others.
         </p>
       </div>
     </div>
