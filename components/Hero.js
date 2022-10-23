@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="box flex flex-col justify-center items-center mt-[9vh] sm:mt-[12vh] md:mt-[15vh] text-textBlack px-4">
+    <div className="box flex flex-col justify-center items-center mt-[7rem] sm:mt-[12rem] lg:mt-[15rem] text-textBlack px-4">
       <div className="flex flex-col items-center justify-center">
         <div className="text-2xl sm:text-3xl md:text-5xl font-bold">
           <Typewriter
