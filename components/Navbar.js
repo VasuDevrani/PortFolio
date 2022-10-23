@@ -10,7 +10,7 @@ export default function Navbar({ handleScroll }) {
 
   return (
     <div className="sticky top-0 bg-white z-[100]">
-      <div className="box flex flex-row mt-4 sm:mt-6 justify-between items-center px-5 ">
+      <div className="box flex flex-row mt-2 justify-between items-center px-5 ">
         <div className="w-[7rem] md:w-[10rem]">
           <Image
             src={logo.src}

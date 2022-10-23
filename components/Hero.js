@@ -1,8 +1,23 @@
 import Image from "next/image";
 import avatar from "../public/assets/avataaars.png";
 import Typewriter from "typewriter-effect";
+import { annotate, annotationGroup } from "rough-notation";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
+  const annoOne = useRef(null);
+  const annoTwo = useRef(null);
+  const annoThree = useRef(null);
+
+  useEffect(() => {
+    const a1 = annotate(annoOne.current, { type: "highlight", color: "yellow" });
+    const a2 = annotate(annoTwo.current, { type: "highlight", color: "#5BE9B9" });
+    const a3 = annotate(annoThree.current, { type: "highlight", color: "lightblue" });
+
+    const ag = annotationGroup([a1, a2, a3]);
+    ag.show();
+  }, []);
+
   return (
     <div className="box flex flex-col justify-center items-center mt-[9vh] sm:mt-[12vh] md:mt-[15vh] text-textBlack px-4">
       <div className="flex flex-col items-center justify-center">
@@ -22,7 +37,7 @@ export default function Hero() {
           />
         </div>
         <p className="text-base sm:text-xl md:text-2xl mt-2 sm:mt-5 font-medium">
-          I love to code, explore around and helping out others
+          I love to <span ref={annoTwo}>code</span>, <span ref={annoOne}>explore</span> around and <span ref={annoThree}>helping</span> out others
         </p>
       </div>
       <div className="relative mt-10 container w-[150px] sm:w-[200px] md:w-[250px] mainBox">

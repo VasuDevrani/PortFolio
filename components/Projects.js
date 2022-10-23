@@ -3,8 +3,20 @@ import projectList from "../public/tech/projectList";
 import { BsGlobe, BsGithub } from "react-icons/bs";
 import sendMail from "../utils/SendEmail";
 import { motion } from "framer-motion";
+import { annotate, annotationGroup } from "rough-notation";
+import { useEffect, useRef } from "react";
 
 export default function Projects() {
+  const annoOne = useRef(null);
+
+  useEffect(() => {
+    const a1 = annotate(annoOne.current, {
+      type: "highlight",
+      color: "yellow",
+    });
+    a1.show();
+  }, []);
+
   return (
     <div
       className="box flex flex-col justify-center items-center my-[7rem] md:my-[10rem]"
@@ -12,8 +24,11 @@ export default function Projects() {
     >
       <p className="text-2xl md:text-3xl font-semibold my-2">My Recent Work</p>
       <p className="text-base sm:text-lg md:text-xl font-medium px-3">
-        Here are a few past projects I've worked on. Want to see more?
-        <span className="text-blue-700 cursor-pointer" onClick={sendMail}>
+        Here are a few past <span ref={annoOne}>projects</span> I've worked on. Want to see more?
+        <span
+          className="text-blue-700 cursor-pointer hover:underline"
+          onClick={sendMail}
+        >
           {" "}
           Email me
         </span>

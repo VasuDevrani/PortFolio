@@ -23,7 +23,9 @@ export default function Home() {
 
   return (
     <div className="font-poppins text-center">
-      <Navbar handleScroll={handleScroll} />
+      <div className="fixed w-full left-0 z-50 bg-white top-0">
+        <Navbar handleScroll={handleScroll} />
+      </div>
       <Hero />
       <div ref={bio}>
         <Bio />
@@ -32,7 +34,7 @@ export default function Home() {
       <div ref={project}>
         <Projects />
       </div>
-      <Hackathons/>
+      <Hackathons />
       <Collab />
       <Footer />
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 import hackvsit from "../public/assets/hackvsit.webp";
 import mait from "../public/assets/mait.webp";
 import { GrTechnology } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 const hackData = [
   {
