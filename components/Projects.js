@@ -43,7 +43,7 @@ export default function Projects() {
           transition={{ duration: 0.7 }}
         >
           <div className="projectItem shadow-lg gap-5 p-3">
-            <div className="w-full sm:w-auto sm:flex-[0.6]">
+            <div className="w-full sm:w-auto sm:flex-[0.6] hover:scale-[0.95] duration-300">
               <Image
                 src={projectList[0].src}
                 alt="filmoro-project"
@@ -57,18 +57,24 @@ export default function Projects() {
               <h1 className="text-xl md:text-2xl font-semibold uppercase">
                 filmoro
               </h1>
-              <ul className="unList">
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <li className="techList">TypeScript</li>
                 <li className="techList">ReactJS</li>
                 <li className="techList">Tailwind CSS</li>
-              </ul>
-              <ul className="unList">
+              </motion.ul>
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <a
                   href="https://filmoro-20491.web.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGlobe /> Live
                   </li>
                 </a>
@@ -77,11 +83,11 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGithub /> GitHub
                   </li>
                 </a>
-              </ul>
+              </motion.ul>
             </div>
           </div>
         </motion.div>
@@ -96,18 +102,24 @@ export default function Projects() {
           >
             <div className="flex-[0.4] text-left">
               <h1 className="text-2xl font-semibold uppercase">Spooky</h1>
-              <ul className="unList">
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <li className="techList">ReactJS</li>
                 <li className="techList">CSS</li>
                 <li className="techList">Design</li>
-              </ul>
-              <ul className="unList">
+              </motion.ul>
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <a
                   href="https://effulgent-custard-63b4a3.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGlobe /> Live
                   </li>
                 </a>
@@ -116,13 +128,13 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGithub /> GitHub
                   </li>
                 </a>
-              </ul>
+              </motion.ul>
             </div>
-            <div className="w-full sm:w-auto sm:flex-[0.6]">
+            <div className="w-full sm:w-auto sm:flex-[0.6] hover:scale-[0.95] duration-300">
               <Image
                 src={projectList[4].src}
                 layout="responsive"
@@ -143,7 +155,7 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <div className="w-full sm:w-auto sm:flex-[0.6]">
+            <div className="w-full sm:w-auto sm:flex-[0.6] hover:scale-[0.95] duration-300">
               <Image
                 src={projectList[2].src}
                 layout="responsive"
@@ -155,18 +167,24 @@ export default function Projects() {
             </div>
             <div className="flex-[0.4] text-left">
               <h1 className="text-2xl font-semibold uppercase">buysell</h1>
-              <ul className="unList">
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <li className="techList">ReactJS</li>
                 <li className="techList">Context API</li>
                 <li className="techList">NodeJS</li>
-              </ul>
-              <ul className="unList">
+              </motion.ul>
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <a
                   href="https://mern-buysell.herokuapp.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGlobe /> Live
                   </li>
                 </a>
@@ -175,11 +193,11 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGithub /> GitHub
                   </li>
                 </a>
-              </ul>
+              </motion.ul>
             </div>
           </motion.div>
         </div>
@@ -195,18 +213,24 @@ export default function Projects() {
           >
             <div className="flex-[0.4] text-left">
               <h1 className="text-2xl font-semibold uppercase">adminDB</h1>
-              <ul className="unList">
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <li className="techList">ReactJS</li>
                 <li className="techList">SyncFusion</li>
                 <li className="techList">Tailwind CSS</li>
-              </ul>
-              <ul className="unList">
+              </motion.ul>
+              <motion.ul className="unList" initial={{ opacity: 0, scale: "0%" }}
+                whileInView={{ opacity: 1, scale: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}>
                 <a
                   href="https://admindb.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGlobe /> Live
                   </li>
                 </a>
@@ -215,13 +239,13 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <li className="techList">
+                  <li className="techList cursor-pointer">
                     <BsGithub /> GitHub
                   </li>
                 </a>
-              </ul>
+              </motion.ul>
             </div>
-            <div className="w-full sm:w-auto sm:flex-[0.6]">
+            <div className="w-full sm:w-auto sm:flex-[0.6] hover:scale-[0.95] duration-300">
               <Image
                 src={projectList[3].src}
                 layout="responsive"
