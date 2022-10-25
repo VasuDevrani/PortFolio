@@ -95,15 +95,15 @@ export default function Projects() {
             transition={{ duration: 0.7 }}
           >
             <div className="flex-[0.4] text-left">
-              <h1 className="text-2xl font-semibold uppercase">solutext</h1>
+              <h1 className="text-2xl font-semibold uppercase">Spooky</h1>
               <ul className="unList">
                 <li className="techList">ReactJS</li>
-                <li className="techList">NodeJS</li>
-                <li className="techList">Tailwind CSS</li>
+                <li className="techList">CSS</li>
+                <li className="techList">Design</li>
               </ul>
               <ul className="unList">
                 <a
-                  href="https://papaya-biscochitos-c6c5db.netlify.app/"
+                  href="https://effulgent-custard-63b4a3.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -112,7 +112,7 @@ export default function Projects() {
                   </li>
                 </a>
                 <a
-                  href="https://github.com/VasuDevrani/SoluText-2.0"
+                  href="https://github.com/VasuDevrani/Halloween"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -124,7 +124,7 @@ export default function Projects() {
             </div>
             <div className="w-full sm:w-auto sm:flex-[0.6]">
               <Image
-                src={projectList[1].src}
+                src={projectList[4].src}
                 layout="responsive"
                 width={35}
                 height={20}
@@ -158,6 +158,7 @@ export default function Projects() {
               <ul className="unList">
                 <li className="techList">ReactJS</li>
                 <li className="techList">Context API</li>
+                <li className="techList">NodeJS</li>
               </ul>
               <ul className="unList">
                 <a
